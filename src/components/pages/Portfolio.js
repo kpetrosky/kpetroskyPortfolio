@@ -9,6 +9,7 @@ import mvc from '../images/mvc.png';
 import pwa from '../images/pwa.png'
 // import dashboard from '../../images/weather dashboard.png'
 import wolf from "../images/wolf.png"
+import personal from "../images/personal.png"
 
 
 
@@ -82,6 +83,16 @@ export default function Portfolio() {
       Repo: 'https://github.com/kpetrosky/my-class-website',
       deployed: 'https://dry-mesa-29236-b7748dc788e2.herokuapp.com/',
       src: mvc,
+      backgroundColor: '#cbc0d3ff',
+      toolsUsed: 'Express.js, APIs, Handlebars.js, Sequelize, Heroku. react, state',
+    },
+    {
+      id: 7,
+      name: 'Personal website',
+      description: 'This is my personal business website.',
+      Repo: 'https://github.com/kpetrosky/my-class-website',
+      deployed: 'https://dry-mesa-29236-b7748dc788e2.herokuapp.com/',
+      src: personal,
       backgroundColor: '#cbc0d3ff',
       toolsUsed: 'Express.js, APIs, Handlebars.js, Sequelize, Heroku. react, state',
     },

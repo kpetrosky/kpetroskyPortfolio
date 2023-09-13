@@ -1,33 +1,27 @@
+// VerticalNavBar.js
+
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom'; // Import Link from React Router
 
-import './VerticalNavBar.css';
-import About from './pages/About'; // Check the path to your About component
-import Contact from './pages/Contact'; // Check the path to your Contact component
-import Portfolio from './pages/Portfolio'; // Check the path to your Portfolio component
-
-const VerticalNavBar = () => {
+function VerticalNavBar() {
   return (
     <nav className="vertical-nav">
       <ul>
         <li>
-          <NavLink to="/about" activeClassName="active" component={About}>
-            About me
-          </NavLink>
+          <Link to="/">Home</Link>
         </li>
         <li>
-          <NavLink to="/contact" activeClassName="active" component={Contact}>
-            Contact
-          </NavLink>
+          <Link to="/about">About Me</Link> {/* Add the link to the About Me section */}
         </li>
         <li>
-          <NavLink to="/portfolio" activeClassName="active" component={Portfolio}>
-            Portfolio
-          </NavLink>
+          <Link to="/portfolio">Portfolio</Link>
+        </li>
+        <li>
+          <Link to="/contact">Contact</Link>
         </li>
       </ul>
     </nav>
   );
-};
+}
 
 export default VerticalNavBar;
